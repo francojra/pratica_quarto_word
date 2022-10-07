@@ -1,0 +1,56 @@
+---
+title: "Documento Quarto Word"
+author: "Jeanne Franco"
+format: docx
+editor: visual
+---
+
+
+## **Quarto**
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## **Running Code**
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+
+```{r}
+1 + 1
+```
+
+
+You can add options to executable code like this
+
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+## **Tabelas**
+
+| **Col1**  | **Col2** | **Col3** | **Col4** | **Col5** |
+|:---------:|:--------:|:--------:|:--------:|:--------:|
+|  kgnvfdb  |   5345   |   546    |   262    |    34    |
+| dfnasgnd  |   465    |    56    |   256    |    55    |
+|  dnsgnsg  |  26562   |   265    |   256    |    34    |
+| dnsrfmnsf |   542    |    25    |   265    |    24    |
+| sfgnsrmn  |   456    |    25    |    25    |   452    |
+
+## Figuras
+
+**Figura 1. Exemplo de figura para documento Quarto.**
+
+
+```{r}
+library(ggplot2)
+datasets::iris
+ggplot2::ggplot(iris, aes(x = Sepal.Length, y = Petal.Length,
+                          color = Species)) +
+  geom_point()
+```
+
